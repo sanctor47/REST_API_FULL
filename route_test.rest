@@ -1,0 +1,36 @@
+###
+GET http://localhost:5000/
+
+###
+POST http://localhost:5000/api/auth/signup
+Content-Type: application/json
+
+{
+    "username":"Nabil",
+    "email":"aser.e.nabil@gmail.com",
+    "password":"123456789",
+    "role":["moderator","user"]
+}
+
+###
+GET http://localhost:5000/api/test/all
+
+###
+GET http://localhost:5000/api/test/user
+
+###
+POST http://127.0.0.1:5000/api/auth/signin
+Content-Type: application/json
+
+{
+    "username":"Nabil",
+    "password":"123456789"
+}
+
+###
+GET http://localhost:5000/api/test/user
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmI5NDA2ZmNkNThlNzI0N2RhZDcyMiIsImlhdCI6MTYzNDQ0MDU0MywiZXhwIjoxNjM0NTI2OTQzfQ.aI5-ADmYguYPT_n3GqVEhHN-xjqJBkB3NFpZE5s9Ylk
+
+###
+GET http://localhost:5000/api/test/admin
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNmI5NDA2ZmNkNThlNzI0N2RhZDcyMiIsImlhdCI6MTYzNDQ0MDU0MywiZXhwIjoxNjM0NTI2OTQzfQ.aI5-ADmYguYPT_n3GqVEhHN-xjqJBkB3NFpZE5s9Ylk
